@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Videos">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_round">
+
+        <TextView
+            android:id="@+id/inst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sometext"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videolist"
+        android:padding="10dp"
+        tools:listitem="@layout/status_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/nostatus"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/inst1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sometext"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:src="@drawable/nomsg"/>
+        <TextView
+            android:id="@+id/inst2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sometext"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="5dp"
+            android:src="@drawable/second"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/noapp"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:textAlignment="center"
+            android:src="@drawable/noapp"/>
+        <TextView
+            android:id="@+id/sometext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sometext"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
+</FrameLayout>

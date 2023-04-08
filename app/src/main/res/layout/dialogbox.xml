@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="28dp"
+    app:cardCornerRadius="14dp"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:padding="18dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/headtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Switch to..."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+    />
+
+    <TextView
+        android:id="@+id/secondtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headtext"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Please choose an option to switch in !"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_below="@+id/secondtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:padding="10dp"
+                    android:drawablePadding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/wa"
+                    android:text="Whatsapp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    />
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:padding="10dp"
+                    android:drawablePadding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/wa"
+                    android:text="Whatsapp Buisness"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:textColor="@color/black"
+                    />
+
+        </RadioGroup>
+<LinearLayout
+    android:layout_below="@+id/radiogroup"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_bold"
+        app:backgroundTint="@null"
+        android:background="@drawable/stylish_button"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
